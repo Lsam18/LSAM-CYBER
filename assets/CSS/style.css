@@ -877,7 +877,7 @@ h2 {
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
-    background-color: #1a1a1a;
+    background-color: #000b1f;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(245, 7, 7, 0.1);
     max-width: 1200px;
@@ -902,6 +902,7 @@ h2 {
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
     
     
 }
@@ -932,7 +933,7 @@ h2 {
 
 #home-text h1 {
     font-family: 'Fira Code', sans-serif;
-    color: #ff3333;
+    color: #ff0000;
     line-height: 1.5;
 }
 
@@ -1277,6 +1278,12 @@ body.dark-mode {
     margin-bottom: 20px;
   }
 
+  #personal-image{
+    height: 250px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
   #home-image-and-text {
     display: inline-block;
     text-align: center;
@@ -1323,7 +1330,7 @@ body.dark-mode {
   }
 
   .social-media-icons li {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
    #cybersecurity-quiz-container {
@@ -1341,12 +1348,21 @@ body.dark-mode {
   }
 
    /* Adjust iframe width for mobile */
-  iframe {
-    width: 400px;
-    height: 300px; /* Adjust height as needed */
+  .iframe1 {
+    width: 300px;
+    height: 200px; /* Adjust height as needed */
     margin: 0 auto;
     display: block;
+    
   }
+  .iframe2 {
+    width: 300px;
+    height: 200px; /* Adjust height as needed */
+    margin: 0 auto;
+    display: block;
+    
+  }
+  
 }
 
 .news-item {
@@ -1370,14 +1386,14 @@ body.dark-mode {
   font-size: 16px;
 }
 
-.news-container {
-  max-height: 400px; /* Adjust height as needed */
-  overflow-y: auto;
-  padding: 10px;
-  border: 2px solid #dc0b0b;
-  border-radius: 8px;
-  margin-top: 10px;
+
+#news-container img {
+  border: 5px solid red;
+  border-radius: 10px;
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
 }
+
 
 #image-box {
   margin-top: 20px;
@@ -1399,3 +1415,185 @@ body.dark-mode {
   text-align: center;
 }
 
+#cybersecurity-news{
+  border: 2px solid #c60707;
+  border-radius: 8px;
+}
+
+#cybersecurity-quiz{
+  border: 2px solid #c60707;
+  border-radius: 8px;
+  
+}
+
+.iframe1{
+  border: 2px solid #c60707;
+  border-radius: 8px;
+}
+
+.iframe2{
+  border: 2px solid #c60707;
+  border-radius: 8px;
+}
+
+
+/* Container styles */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles for Skills Section */
+#skills-section {
+  background-color: #f8f9fa;
+  margin-top: 40px;
+  padding: 40px;
+  text-align: center;
+}
+
+#skills-section h2 {
+  font-size: 36px;
+  color: #343a40;
+  margin-bottom: 30px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-list li {
+  margin: 0 20px;
+  font-size: 18px;
+  color: #6c757d;
+}
+
+/* Styles for About Section */
+#about-section {
+  background-color: #000000;
+  margin-top: 40px;
+  padding: 40px;
+  text-align: center;
+}
+
+#about-section h2 {
+  font-size: 36px;
+  color: #a4acb3;
+  margin-bottom: 30px;
+}
+
+#about-section p {
+  font-size: 16px;
+  color: #a4acb3;
+  line-height: 1.6;
+}
+
+
+
+
+.table {
+  font-size: 16px; /* Adjust font size as needed */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.table-bordered {
+  border: 2px solid #c60707;
+  border-radius: 8px;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #500101;
+}
+
+#projects-section {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(245, 7, 7, 0.1);
+  margin-top: 90px;
+}
+
+#projects-section h2 {
+  font-size: 28px; /* Adjust font size as needed */
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+      font-size: 12px; /* Adjust font size for smaller screens */
+  }
+  
+  #projects-section {
+      padding: 10px;
+      margin-top: 40px;
+  }
+  #experience-heading{
+    overflow-x:hidden;
+  }
+}
+
+/*education*/
+.table {
+  font-size: 16px; /* Adjust font size as needed */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.table-education-experience-contact {
+  border: 2px solid #c60707;
+  border-radius: 8px;
+}
+
+.table-education-experience-contact td {
+  padding: 10px;
+}
+
+#education-section {
+  background-color: #000b1f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(245, 7, 7, 0.1);
+  margin-top: 40px;
+}
+
+#education-section h2 {
+  font-size: 28px; /* Adjust font size as needed */
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  
+  #education-section {
+      padding: 10px;
+      margin-top: 60px;
+  }
+
+  
+}
+
+#contact-form{
+  font-size: 16px;
+}
+
+#table-experience{
+  font-size: 13px;
+}
