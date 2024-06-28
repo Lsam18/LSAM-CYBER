@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Alert method for Final Test sub-section
     function isValid() {
         let password = document.getElementById("password").value;
-        if (password == "jellybean") {
+        if (password === "jellybean") {
             window.location.href = "congrats.html";
         } else {
             alert("Oops! Goodbye, friend.");
@@ -12,49 +12,43 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ensure dark mode is enabled on page load
     document.body.classList.add("dark-mode");
 
-    // News API configuration
-    const apiKey = '5d0e1e6c46714929bfa16e7619b3343f';
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${apiKey}`;
-    const newsContainer = document.getElementById('news-container');
+    // Image and caption data
+    const images = [
+        {
+            src: "assets/images/SECU.jpeg",
+            caption: "Top Cybersecurity Trends in 2024 - Tap to Learn More"
+        },
+        {
+            src: "assets/images/Red Badge Security Logo.png",
+            caption: "Breaking Cybersecurity News - Tap to Learn More"
+        },
+        {
+            src: "assets/images/cybernews.png",
+            caption: "Latest Updates from Security Week - Tap to Learn More"
+        }
+    ];
 
-    fetch(apiUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log('News API response:', data);
-            const articles = data.articles;
+    let currentIndex = 0;
+    const newsImage = document.getElementById('news-image');
+    const newsCaption = document.getElementById('news-caption');
 
-            if (articles.length > 0) {
-                articles.forEach(article => {
-                    const newsLink = document.createElement('a');
-                    newsLink.href = article.url;
-                    newsLink.target = '_blank';
+    function updateImageAndCaption() {
+        const currentImage = images[currentIndex];
+        newsImage.src = currentImage.src;
+        newsCaption.textContent = currentImage.caption;
+        currentIndex = (currentIndex + 1) % images.length;
+    }
 
-                    const newsItem = document.createElement('div');
-                    newsItem.classList.add('news-item');
+    // Initial update
+    updateImageAndCaption();
 
-                    const newsImage = document.createElement('img');
-                    newsImage.src = article.urlToImage || 'assets/images/Red Badge Security Logo.png'; // Placeholder image if no news image available
-                    newsImage.alt = article.title;
+    // Change image and caption every 2 seconds
+    setInterval(updateImageAndCaption, 2000);
 
-                    const newsTitle = document.createElement('p');
-                    newsTitle.textContent = article.title;
+    // Add click event to direct to Security Week site
+    const newsLink = document.getElementById('news-link');
+    newsLink.href = "https://www.securityweek.com/news/";
 
-                    newsLink.appendChild(newsImage);
-                    newsLink.appendChild(newsTitle);
-                    newsItem.appendChild(newsLink);
-                    newsContainer.appendChild(newsItem);
-                });
-            } else {
-                newsContainer.innerHTML = '<p>No news available at the moment.</p>';
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching news:', error);
-            newsContainer.innerHTML = '<p>Failed to load news. Please try again later.</p>';
-        });
+    // Add event listener to the submit button
+    document.getElementById('sendTest').addEventListener('click', isValid);
 });
