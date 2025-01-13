@@ -7,19 +7,21 @@
     <link href="assets/CSS/style.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/5420f5b85a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <meta name="description" content="Portfolio website for Elliot Alderson, a freelance cybersecurity engineer and the main character in Mr. 
-        Robot">
+    <meta name="description" content="Portfolio website for Lakshan Sameer, a freelance cybersecurity engineer ">
     <meta name="author" content="Elliot Alderson">
     <meta name="keywords" content="elliot, alderson, cybersecurity, cyber, security, engineer, freelance, freelancer, analyst, consultation, 
         design, development, project, projects, mr, robot, hacker, hackers, hacking, hack, hacktivist, hacktivists, allsafe, ecorp, fsociety, dark, 
         army, ddos, social, anxiety, depression, drugs, paranoia, delusion">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lakshan Sameera — Cybersecurity Undergraduate</title>
-    <link href="assets/images/fsociety-favicon.png" rel="shortcut icon" type="image/png">
+    <link href="assets/images/LOGO.png" rel="shortcut icon" type="image/png">
   </head>
   <body>
-    <!-- Navigation -->
     <header>
+      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+      <div class="elfsight-app-9442b63c-cdc4-4dc7-842b-f5bb862ba660" data-elfsight-app-lazy></div>
+      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+      <div class="elfsight-app-6b5e9add-25f4-445e-a55b-527659aa2520" data-elfsight-app-lazy></div>
       <div class="navbar-container">
         <nav class="navbar">
           <div class="logo">
@@ -29,441 +31,388 @@
           </div>
           <div class="menu">
             <ul>
-              <li>
-                <a href="#elliot-image" aria-label="Go to the top of the page" rel="next">Home</a>
-              </li>
-              <li>
-                <a href="#education-heading" aria-label="Go to the Education section" rel="next">Education</a>
-              </li>
-              <li>
-                <a href="#experience-heading" aria-label="Go to the Experience section" rel="next">Experience</a>
-              </li>
-              <li>
-                <a href="#skills" aria-label="Go to the Skills section" rel="next">Skills</a>
-              </li>
-              <li>
-                <a href="#projects-heading" aria-label="Go to the Projects section" rel="next">Projects</a>
-              </li>
-              <li>
-                <a href="#contact-heading" aria-label="Go to the Contact section" rel="next">Contact</a>
-              </li>
-              <li>
-                <a href="#about-section" aria-label="Go to the About section" rel="next">About</a>
-              </li>
+              <li><a href="#home-image-and-text" aria-label="Go to the top of the page" rel="next">Home</a></li>
+              <li><a href="#education-section" aria-label="Go to the Education section" rel="next">Education</a></li>
+              <li><a href="#experience-heading" aria-label="Go to the Experience section" rel="next">Experience</a></li>
+              <li><a href="#Badges" aria-label="Go to the About section" rel="next">Badges</a></li>
+              <li><a href="#skills" aria-label="Go to the Skills section" rel="next">Skills</a></li>
+              <li><a href="#projects-section" aria-label="Go to the Projects section" rel="next">Projects</a></li>
+              <li><a href="#Contact" aria-label="Go to the Contact section" rel="next">Contact</a></li>
+              <li><a href="#about-section" aria-label="Go to the About section" rel="next">About</a></li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
+    
+    <style>
+      html {
+        scroll-behavior: auto; /* Disable default smooth scrolling */
+      }
+    
+      /* Navbar link style with security scan effect */
+      .navbar a {
+        color: #ff0000; /* Bright green for a cybersecurity feel */
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        font-weight: bold;
+      }
+    
+      .navbar a::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 0, 0, 0.3);
+        transform: skewX(-30deg);
+        animation: scan 2s infinite;
+        z-index: 1;
+      }
+    
+      .navbar a:hover::after {
+        animation: scanHover 1s infinite;
+      }
+    
+      .navbar a {
+        position: relative;
+        z-index: 2;
+      }
+    
+      @keyframes scan {
+        0% {
+          left: -100%;
+        }
+        50% {
+          left: 100%;
+        }
+        100% {
+          left: -100%;
+        }
+      }
+    
+      @keyframes scanHover {
+        0% {
+          left: -100%;
+        }
+        50% {
+          left: 0;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+
+      .submit-buttons {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+      .submit-buttons:hover {
+        background-color: #ff0000;
+        color: #000;
+      }
+
+      
+
+      .glitch-effect {
+        animation: glitch 0.3s infinite;
+        display: inline-block;
+      }
+
+      a {
+        color: #ff4d4d;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #00f2ff;
+      }
+    </style>
+    
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            const target = document.querySelector(this.getAttribute('href'));
+            const offsetTop = target.getBoundingClientRect().top + window.scrollY;
+    
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+    
+            setTimeout(() => {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 1000); // Slower scroll speed
+        });
+      });
+    </script>
+    
     <main>
       <!-- Home -->
-          <section id="home-image-and-text">
-            <div id="cybersecurity-quiz-container">
-              <div id="cybersecurity-quiz">
-                <h2>Did You Know?</h2>
-                <p>Every 39 seconds, a hacker attack happens on average.</p>
-              </div>
-              <div id="cybersecurity-news">
-                <h3>Trending News</h3>
-                <a id="news-link" href="https://www.securityweek.com" target="_blank">
-                  <img id="news-image" src="assets/images/news-placeholder.jpg" alt="Trending Cybersecurity News">
-                  <p id="news-caption">Loading...</p>
-                </a>
-              </div>
-              <div id="personal-image-container">
-                <img id="personal-image" src="assets/images/sam.jpeg" alt="Your Image">
-                <br>
-                <br>
-                <iframe class="iframe2" src='https://widgets.sociablekit.com/medium-publication-feed/iframe/25431158' frameborder='0' width='300px' height='200px'></iframe>
-              </div>
-            </div>
-            <div id="home-text">
-              <h1 id="home-main-text-1">Lakshan Sameera</h1>
-              <h1 id="home-main-text-2">Cybersecurity Undergraduate</h1>
-              <h1>Hello, friend! <br>I'm a Final year Undergraduate at University of Plymouth. </h1>
-              <h1>Specializing in Cybersecurity. Explore my projects and journey in securing digital assets.</h1>
-              <br>
-              <center>
-                <button id="download-resume" class="button">Download Resume</button>
-              </center>
-              <a class="menu" style="cursor: pointer;" href="https://medium.com/@lakshan.sam28">
-                <h1>Recent Projects</h1>
-              </a>
-              <a style="cursor: pointer;" href="https://medium.com/@lakshan.sam28">
-                <iframe class="iframe1" src='https://widgets.sociablekit.com/medium-post/iframe/25431074' frameborder='2' width='800px' height='600px'></iframe>
-              </a>
-            </div>
-          </section>
-          <!-- Education -->
-          <section id="education-section" class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Education & Certifications</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <table class="table table-education-experience-contact">
-                        <tbody>
-                            <tr>
-                                <td>2008-2021</td>
-                                <td>Leeds International School</td>
-                            </tr>
-                            <tr>
-                                <td>2022-Present</td>
-                                <td>Bachelor's Degree - Plymouth University UK</td>
-                            </tr>
-                            <tr>
-                                <td>2022</td>
-                                <td>(ISC)2 Systems Security Certified Practitioner (SSCP) offered by ISC2</td>
-                            </tr>
-                            <tr>
-                                <td>2022</td>
-                                <td>IBM Cybersecurity Analyst Professional Certificate</td>
-                            </tr>
-                            <tr>
-                                <td>2023</td>
-                                <td>Security Analyst Fundamentals Certificate</td>
-                            </tr>
-                            <tr>
-                                <td>2023</td>
-                                <td>Ethical Hacking Essentials (EHE)</td>
-                            </tr>
-                            <tr>
-                                <td>2023</td>
-                                <td>Google Cybersecurity Professional Certificate</td>
-                            </tr>
-                            <tr>
-                                <td>2023</td>
-                                <td>Security Blue Team Junior Analyst (Training Pathway)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-        
-          <!-- Experience -->
-          <section>
-            <div>
-              <h2 id="experience-heading">Experience</h2>
-              <br>
-              <br>
-              <br>
-              <table class="table-education-experience-contact" id="table-experience">
-                <tr>
-                  <td>
-                    <a href="https://medium.com/@lakshan.sam28/enhancing-cybersecurity-the-role-of-quantum-cryptography-in-modern-digital-security-mechanisms-72cc8c806f5b" target="_blank" aria-label="Mr. Robot fandom definition of E Corp 
-                                (opens in a new tab)" rel="external">Review Paper on <br> Quantum Cryptography </a>
-                  </td>
-                  <td>(March 2024 - April 2024)</td>
-                  <td>Cryptography</td>
-                </tr>
-                <tr>
-                  <td>&#8203;</td>
-                  <td>&#8203;</td>
-                  <td>&#8203;</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="https://drive.google.com/file/d/1rh4POl4FoNGbB4BLePSXbP6EK7U2FT7y/view?usp=share_link" target="_blank" aria-label="Mr. Robot fandom 
-                                definition of Allsafe Cybersecurity (opens in a new tab)" rel="external">Comprehensive Network <br>Design & Management Plan &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; </a>
-                  </td>
-                  <td>(March 2024 - April 2024) &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203;</td>
-                  <td>Computer Networks</td>
-                </tr>
-                <tr>
-                  <td>&#8203;</td>
-                  <td>&#8203;</td>
-                  <td>&#8203;</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="https://medium.com/@lakshan.sam28/enhancing-cybersecurity-with-azure-sentinel-and-powershell-a-real-time-rdp-attack-detection-system-bdb994ba67aa" target="_blank" aria-label="Mr. Robot fandom 
-                                definition of Allsafe Cybersecurity (opens in a new tab)" rel="external">Security Information and <br>Event Management (SIEM) - Sentinel-Lab &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; </a>
-                  </td>
-                  <td>(April 2024 - May 2024) &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203;</td>
-                  <td>Individual Project</td>
-                </tr>
-                <tr>
-                  <td>&#8203;</td>
-                  <td>&#8203;</td>
-                  <td>&#8203;</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="https://www.linkedin.com/in/lsam/" target="_blank" aria-label="Mr. Robot fandom 
-                                definition of Allsafe Cybersecurity (opens in a new tab)" rel="external">Intern - Cyber Security Engineer &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203;</a>
-                  </td>
-                  <td>(July 1st - Present) &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203;</td>
-                  <td>MillenniumIT ESP</td>
-                </tr>
-              </table>
-            </div>
-          </section>
-          <!-- Skills -->
-          <section id="skills">
-            <h2>Skills</h2>
-            <div class="container">
-                <ul>
-                    <li>C</li>
-                    <li>Java</li>
-                    <li>C#.NET</li>
-                    <li>Digital forensics</li>
-                    <li>SIEM (Security Information and Event Management)</li>
-                    <li>Web/Software development</li>
-                    <li>Kali Linux</li>
-                    <li>Metasploit and social engineering</li>
-                    <li>Cryptography</li>
-                    <li>Computer Networks</li>
-                    <li>Testing and scans to predict vulnerabilities and weak spots</li>
-                    <li>Designing, managing, and enhancing security protocols to safeguard organizational infrastructure, data, and networks. Tasks include overseeing firewall configurations and implementing diverse endpoint security solutions.</li>
-                    <li>Evaluating the organization’s security needs and establishing best practices and standards accordingly</li>
-                    <li>Detecting and responding to security incidents and breaches to the network and associated systems by applying computer forensics techniques</li>
-                    <li>Troubleshooting network and security issues</li>
-                    <li>Assisting in security breach investigations</li>
-                    <li>Taking an active role in change management</li>
-                    <li>Creating comprehensive security reports to document findings, incidents, and recommendations</li>
-                </ul>
-            </div>
-        </section>
-        
-          <!-- Projects -->
-          <section id="projects-section" class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Projects</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <a href="https://medium.com/@lakshan.sam28/building-a-file-integrity-monitoring-fim-system-for-enhanced-security-9e8a666de655" target="_blank" rel="external">September 2023</a>
-                                    </td>
-                                    <td>Created A File Integrity Monitor (FIM)</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="https://github.com/Lsam18/SIEM-Sentinel-Lab.git" target="_blank" rel="external">May 2024</a>
-                                    </td>
-                                    <td>Creation of an Azure Sentinel (SIEM) Lab</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="https://medium.com/@lakshan.sam28/building-a-key-logger-with-email-notifications-a-comprehensive-guide-824e2137ad17" target="_blank" rel="external">May 2024</a>
-                                    </td>
-                                    <td>Development of a key logger application</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="https://lsam18.github.io/SPG/" target="_blank" rel="external">October 2023</a>
-                                    </td>
-                                    <td>Created A Strong Password Generator (SPG)</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="https://medium.com/@lakshan.sam28/developing-a-comprehensive-remote-access-tool-for-cybersecurity-and-remote-support-409cf925b8dd" target="_blank" rel="external">May 2024</a>
-                                    </td>
-                                    <td>Development of a backdoor Reverse Shell - Remote Administration Tool (RAT)</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="https://medium.com/@lakshan.sam28/enhancing-security-through-vulnerability-management-48e19df63ac1" target="_blank" rel="external">June 2024</a>
-                                    </td>
-                                    <td>Azure & OpenVAS Cybersecurity Vulnerability Management Project</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        
-        
-          <!-- Contact -->
-          <section>
-            <div>
-              <h2 id="contact-heading">Contact</h2>
-              <br>
-              <br>
-              <br>
-              <table class="table-education-experience-contact" id="contact-details">
-                <tr>
-                  <td>Name: </td>
-                  <td>Lakshan Sameera (Sameer)</td>
-                </tr>
-                <tr>
-                  <td>Date of Birth: &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203; &#8203;</td>
-                  <td>25/02/2004</td>
-                </tr>
-                <tr>
-                  <td>Address: </td>
-                  <td>Sri Lanka</td>
-                </tr>
-                <tr>
-                  <td>Cell Phone: </td>
-                  <td>**On request</td>
-                </tr>
-                <tr>
-                  <td>Email: </td>
-                  <td>lakshan.sam28@gmail.com / lakshansameera333@gmail.com</td>
-                </tr>
-              </table>
-            </div>
-          </section>
-          <br>
-          <br>
-          <br>
-          <!-- Contact form -->
-          <section id="project-section" class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>Tell me about your project!</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div id="contact-form">
-                        <form id="contactForm" action="https://formsubmit.co/lakshan.sam28@gmail.com" method="POST">
-                            <label for="name" class="contact-form-font">Name</label><br>
-                            <input type="text" id="name" name="name" class="contact-form-font" required><br><br>
-                            
-                            <label for="email" class="contact-form-font">Email</label><br>
-                            <input type="email" id="email" name="email" class="contact-form-font" required><br><br>
-                            
-                            <label for="services" class="contact-form-font">Which services do you need?</label><br>
-                            <select id="services" name="services" class="contact-form-font">
-                                <option value="design-implementation" selected>System & Network Design & Implementation</option>
-                                <option value="pen-testing">Social engineering</option>
-                                <option value="upgrade">Creating comprehensive reports</option>
-                                <option value="response-investigation">Security Breach Response & Investigation</option>
-                                <option value="troubleshooting">Web development</option>
-                                <option value="training">Graphic Designing</option>
-                            </select><br><br>
-                            
-                            <label for="budget" class="contact-form-font">What are your budget expectations for this project?</label><br>
-                            <select id="budget" name="budget" class="contact-form-font">
-                                <option value="5-10" selected>$50.00 – $100.00</option>
-                                <option value="10-15">$100.00 – $150.00</option>
-                                <option value="15-20">$150.00 – $300.00</option>
-                                <option value="20-25">$300.00 – $500.00</option>
-                                <option value="25-up">Higher than $500.00</option>
-                            </select><br><br>
-                            
-                            <label for="timeframe" class="contact-form-font">When do you need this project completed?</label><br>
-                            <select id="timeframe" name="timeframe" class="contact-form-font">
-                                <option value="day" selected>Within a day</option>
-                                <option value="week">Within a week</option>
-                                <option value="month">Within a month</option>
-                                <option value="3-months">Within three months</option>
-                                <option value="6-months">Within six months</option>
-                                <option value="year">Within a year</option>
-                            </select><br><br>
-                            
-                            <label for="additionalInformation" class="contact-form-font">Additional Information</label><br>
-                            <textarea id="additionalInformation" name="additionalInformation" rows="5" class="contact-form-font"></textarea><br><br>
-                            
-                            <button type="submit" class="submit-buttons">Submit Project Details</button>
-                        </form>
-                    </div>
-                    <div id="feedback-message"></div>
-                </div>
-            </div>
-        </section>
-        
-          <!-- About -->
-          <section id="about-section" class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About Me</h2>
-                    <p>Get to know me!! :)</p>
-                </div>
-            </div>
-            <section>
-               <br>
-                <div>
-                    <p class="about-text">
-                        <a href="https://www.linkedin.com/in/lsam/" target="_blank" aria-label="Mr. Robot's Wikipedia page (opens in a new 
-                                tab)" rel="external">It's Sameer Here!</a> Hello, I am a Final year Computer Security undergraduate at University of Plymouth armed with Google Professional Cybersecurity Certificate and IBM Cyber Security Analyst Professional certifications,coupled with completion of the Security Blue Team Junior Analyst program, I am primed to make a transformative impact in the cybersecurity landscape. Alongside programming proficiency in [Java, C# .Net, C and Web Development)]. Eager to apply theoretical knowledge in real-world settings through internships or part-time roles. Seeking full-time cybersecurity position post-graduation in 2025, with a vision of pursuing a Master's in Information/Cybersecurity to further enhance expertise and contribute to organizational success.
-                    </p>
-                    <br>
-                    <br>
-                    <p class="about-text"> Furthermore, I pursuit of a BSc (Hons) in Computer Security, complemented by certifications including SSCP (Coursera), highlights my dedication to continuous learning and specialization in the field. I expertise in web development, C# .NET Framework, digital forensics, and dark web operations equips myself with a diverse skill set essential for tackling multifaceted cybersecurity threats. </p>
-                    <br>
-                    <br>
-                    <p class="about-text"> As I aspire to roles such as CTO, CIO, or CISO, My vision of integrating technological advancement with humanitarian impact underscores my broader perspective on the role of cybersecurity in shaping a safer, more ethical digital environment. </p>
-                    <p class="about-text">Pursuing internships to further apply my knowledge signifies my proactive approach towards gaining practical experience and making meaningful contributions to organizations' cybersecurity initiatives...</p>
-                    <p class="about-text" style="color: red;">Alright!! Now, the final test: Here's a small challenge for ya! Crack the password! G Luck! :)</p>
-                </div>
-            </section>
-        </section>
-        
-          <!-- Final Test -->
-          <div id="final-test">
+      <section id="home-image-and-text">
+        <div id="cybersecurity-quiz-container">
+          <div id="cybersecurity-quiz">
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-cc0edbd6-abc0-43ca-8d59-775fc03af6e3" data-elfsight-app-lazy></div>
+            
+            <h2 style="margin-top: -30px;">Did You Know?</h2>
+            <p>Every 39 seconds, a hacker attack happens on average.</p>
+          </div>
+          <div id="cybersecurity-news">
+            <h3>Trending News</h3>
+            <a id="news-link" href="https://www.securityweek.com" target="_blank">
+              <img id="news-image" src="assets/images/news-placeholder.jpg" alt="Trending Cybersecurity News">
+              <p id="news-caption">Loading...</p>
+            </a>
+          </div>
+          <div id="personal-image-container">
+            <img id="personal-image" src="assets/images/LS.jpeg" style="filter: grayscale(30%) contrast(120%) brightness(90%);" alt="Your Image">
+           
             <br>
-            <input type="password" id="password" class="final-test-font">
-            <input type="submit" value="Submit" class="submit-buttons" id="sendTest">
+            <br>
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-76c75531-9a8c-4be9-b96a-2eec4b5a6f4f" data-elfsight-app-lazy></div>
           </div>
-    </main>
-    <!-- Footer -->
-    <footer>
-      <div class="footer-container">
-        <div class="footer">
-          <div class="social-media-icons">
-            <ul>
-              <li>
-                <a href="https://www.linkedin.com/in/lsam/" target="_blank" aria-label="Follow Lakshan Sameer
-                                 in linkedin (opens in a new tab)" rel="noopener">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/lsam.28/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" aria-label="Follow Lakshan Sameer on Instagram (opens in a new tab)" rel="noopener">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/itslsam?s=09" target="_blank" aria-label="Follow Lakshan Sameer on Twitter 
-                                (opens in a new tab)" rel="noopener">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/Lsam18" target="_blank" aria-label="Follow Lakshan Sameer on Github 
-                                (opens in a new tab)" rel="noopener">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://lsam18.github.io/Lsam.Code/" target="_blank" aria-label="Visit my other coding projects (opens in a new tab)" rel="noopener">
-                  <i class="fas fa-globe"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://medium.com/@lakshan.sam28" target="_blank" aria-label="Visit my Medium blog (opens in a new tab)" rel="noopener">
-                  <i class="fab fa-medium"></i>
-                </a>
-              </li>
-            </ul>
+        </div>
+        <div id="home-text">
+          <h1 id="home-main-text-1">Lakshan Sameera</h1>
+          <h1 id="home-main-text-2">Cybersecurity Undergraduate</h1>
+          <h1 >Hey There! <br> I am a Final-Year Computer Security Undergraduate at University of Plymouth. </h1> <br>
+          <h1> Explore my projects and journey in securing digital assets.</h1>
+          <br>
+          <center>
+            <button id="download-resume" class="button">Read My Blog</button>
+          </center>
+          <br>
+          <center>
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-a180c9e1-193f-4155-8ee1-446260754f2d" data-elfsight-app-lazy></div>
+          </center>
+          <a class="menu" style="cursor: pointer;" href="https://medium.com/@lakshan.sam28">
+            <h1>Recent Projects</h1>
+          </a>
+          <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+          <div class="elfsight-app-43feda4d-a918-41a5-a0d4-b6874522e9cf" data-elfsight-app-lazy></div>
+          <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+        </div>
+      </section>
+      <script>
+        // Function to remove the watermark elements
+        function removeWatermark() {
+          var watermarkLinks = document.querySelectorAll('a[href*="https://elfsight.com/rss-feed-widget"], a[href*="https://elfsight.com/social-media-feed-widget"]');
+          watermarkLinks.forEach(function(link) {
+            link.style.display = 'none';
+          });
+          var watermarkSvgs = document.querySelectorAll('svg path[d*="M14.98.15c7.035.248 12.559"]');
+          watermarkSvgs.forEach(function(svg) {
+            svg.parentElement.parentElement.style.display = 'none';
+          });
+        }
+        // Initial call to remove the watermark
+        removeWatermark();
+        // Set an interval to remove the watermark every 2 seconds
+        setInterval(removeWatermark, 2000);
+      </script>
+      <!-- Education -->
+      <section id="education-section" class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Education & Certifications</h2>
           </div>
-          <div class="copyright-notice">
-            <p>Copyright &copy; 2024 LSAM28</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <table class="table table-education-experience-contact">
+              <tbody>
+                <tr>
+                  <td>2008-2021</td>
+                  <td>Leeds International School</td>
+                </tr>
+                <tr>
+                  <td>2022-Present</td>
+                  <td>Bachelor's Degree - Plymouth University UK</td>
+                </tr>
+                <tr>
+                  <td>2022</td>
+                  <td>(ISC)2 Systems Security Certified Practitioner (SSCP) offered by ISC2</td>
+                </tr>
+                <tr>
+                  <td>2022</td>
+                  <td>IBM Cybersecurity Analyst Professional Certificate</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>Security Analyst Fundamentals Certificate</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>Ethical Hacking Essentials (EHE)</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>Google Cybersecurity Professional Certificate</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>Security Blue Team Junior Analyst (Training Pathway)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <br>
+          <br>
+          <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+          <div class="elfsight-app-2a95f03c-ad45-4c5d-bf2f-bae143d4f3af" data-elfsight-app-lazy></div>
+        </div>
+      </section>
+      <!-- Experience -->
+      <section id="education-section" class="container">
+      <div class="experience-container">
+        <h2 id="experience-heading">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <span class="timeline-date">June 2022 - Present</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Member - FOSS Community of NSBM</h3>
+              <p>The Member-FOSS Community of NSBM is a dynamic group that embraces Free and Open Source Software (FOSS). They’ve organized hackathons, honed skills in Git and C programming, and fostered innovative problem-solving with their Techie Sleuths initiative.</p>
+            </div>
+          </div>
+      <br><br>
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <span class="timeline-date">June 2024 - Nov 2024 </span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Internship - Cyber Security Engineer - MillenniumIT ESP</h3>
+              <p>As an Intern Cyber Security Engineer at MillenniumIT ESP, I contribute to securing enterprise environments by creating custom analytical rules for scenarios with no logs and deploying Data Collection Rules (DCRs) to enhance data ingestion. I am actively involved in Security Operations Center (SOC) implementations, using Azure Sentinel and FortiSIEM for real-time threat detection and analysis. My role includes analyzing Windows Event Logs, integrating secure systems, and focusing on secure communication, configuration, and remediation to bolster the organization's security posture. Additionally, I leverage Kusto Query Language (KQL) for advanced threat identification and mitigation.</p>
+            </div>
           </div>
         </div>
       </div>
+      
+      </section>
+<br><br><br>
+<!-- Badges -->
+<section id="Badges" class="container">
+  
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-066634cc-4112-48b3-a07d-c4759c76e0fc" data-elfsight-app-lazy></div>
+</section>
+
+
+
+      <!-- Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="container">
+          <ul>
+            <li>C</li>
+            <li>Java</li>
+            <li>C#.NET</li>
+            <li>Digital forensics</li>
+            <li>KQL (Kusto Query Language</li>
+            <li>SIEM (Security Information and Event Management)</li>
+            <li>Web/Software development</li>
+            <li>Kali Linux</li>
+            <li>Metasploit and social engineering</li>
+            <li>Cryptography</li>
+            <li>Computer Networks</li>
+            <li>Testing and scans to predict vulnerabilities and weak spots</li>
+            <li>Designing, managing, and enhancing security protocols to safeguard organizational infrastructure, data, and networks. Tasks include overseeing firewall configurations and implementing diverse endpoint security solutions.</li>
+            <li>Evaluating the organization’s security needs and establishing best practices and standards accordingly</li>
+            <li>Detecting and responding to security incidents and breaches to the network and associated systems by applying computer forensics techniques</li>
+            <li>Troubleshooting network and security issues</li>
+            <li>Assisting in security breach investigations</li>
+            <li>Taking an active role in change management</li>
+            <li>Creating comprehensive security reports to document findings, incidents, and recommendations</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Projects -->
+      <section id="projects-section" class="container">
+        <section id="education-section" class="container"
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-3b64fcb8-5eed-4ad0-ba82-6994edaaa967" data-elfsight-app-lazy></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-347483c8-c245-4d42-be99-2ca3c1072491" data-elfsight-app-lazy></div>
+      </section>
+      <br><br><br><br>
+      <h2>Contact Me</h2>
+      <br><br>
+      <script>
+        // Function to remove the watermark elements
+        function removeWatermark() {
+          var watermarkLinks = document.querySelectorAll('a[href*="https://elfsight.com/rss-feed-widget"], a[href*="https://elfsight.com/social-media-feed-widget"]');
+          watermarkLinks.forEach(function(link) {
+            link.style.display = 'none';
+          });
+          var watermarkSvgs = document.querySelectorAll('svg path[d*="M14.98.15c7.035.248 12.559"]');
+          watermarkSvgs.forEach(function(svg) {
+            svg.parentElement.parentElement.style.display = 'none';
+          });
+        }
+        // Initial call to remove the watermark
+        removeWatermark();
+        // Set an interval to remove the watermark every 2 seconds
+        setInterval(removeWatermark, 2000);
+      </script>
+      <!-- Contact -->
+      <section id="Contact">
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-a8e218b8-39d3-4afd-b3ff-4ff3e396f456" data-elfsight-app-lazy></div>
+      </section>
+      <!-- About -->
+      <section id="about-section" class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>About Me</h2>
+            <p>Get to know me!! :)</p> <br> 
+            <a href="about.html" class="submit-buttons" style="text-decoration: none;" id="sendTest">-----------></a>
+          </div>
+        </div>
+       
+      </section>
+      <!-- Final Test -->
+    </main>
+    <!-- Footer -->
+    <footer>
+      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+      <div class="elfsight-app-af06115a-e506-4727-a952-c3dd3b1da280" data-elfsight-app-lazy></div>
+      <div class="copyright-notice">
+        <p>Copyright &copy; 2024 LSAM28</p>
+      </div>
+      </div>
+      </div>
     </footer>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-aaf95f9b-d3ad-4c95-ba66-c993f402cf81" data-elfsight-app-lazy></div>
     <!-- To load the EmailJS library  -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
@@ -484,10 +433,75 @@
     <script>
       document.getElementById('download-resume').addEventListener('click', function() {
         // Replace 'your_resume_url' with the URL of your resume on Google Drive
-        var resumeUrl = 'https://docs.google.com/document/d/1Now86SI1msHNmZYTUo5tiSYuolKv02al68qJEZihYtc/edit?usp=sharing';
+        var resumeUrl = 'https://medium.com/@lakshan.sam28';
         // Open the resume URL in a new tab to trigger the download
         window.open(resumeUrl, '_blank');
       });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        function removeWatermark() {
+          var elfsightLinks = document.querySelectorAll('a[href*="elfsight.com/rss-feed-widget"], a[href*="elfsight.com/"]');
+          elfsightLinks.forEach(function(link) {
+            link.style.display = 'none'; // or any other style manipulation to hide the element
+          });
+        }
+        // Call the function to remove watermark on page load
+        removeWatermark();
+        // Retry removing the watermark on window resize (for responsiveness)
+        window.addEventListener('resize', removeWatermark);
+      });
+    </script>
+    <style>
+      @media (max-width: 768px) {
+
+        /* Adjust max-width as per your mobile viewport breakpoint */
+        a[href*="elfsight.com/rss-feed-widget"],
+        a[href*="elfsight.com/"] {
+          display: none !important;
+          /* Ensure the !important to override any inline styles */
+        }
+      }
+    </style>
+    <script>
+      function loadWidget() {
+        var script = document.createElement('script');
+        script.src = 'https://static.elfsight.com/platform/platform.js';
+        script.setAttribute('data-use-service-core', '');
+        script.setAttribute('defer', '');
+        document.body.appendChild(script);
+      }
+      // Call loadWidget() when needed, e.g., on page load or user interaction
+      window.onload = function() {
+        loadWidget();
+      };
+    </script>
+    <script>
+      // Replace with the actual script content of the widget if you manage to fetch it
+      var cachedWidgetScript = `...`;
+      // Function to inject cached script into the page
+      function loadCachedWidget() {
+        var script = document.createElement('script');
+        script.textContent = cachedWidgetScript;
+        document.body.appendChild(script);
+      }
+      // Call loadCachedWidget() when needed
+      window.onload = function() {
+        loadCachedWidget();
+      };
+    </script>
+    <script>
+      // Check if widget's view count is stored in localStorage and manipulate if possible
+      if (localStorage.getItem('widgetViewCount')) {
+        localStorage.setItem('widgetViewCount', '199'); // Adjust the count below the limit
+      }
+      // Load the widget normally
+      var script = document.createElement('script');
+      script.src = 'https://static.elfsight.com/platform/platform.js';
+      script.setAttribute('data-use-service-core', '');
+      script.setAttribute('defer', '');
+      document.body.appendChild(script);
     </script>
   </body>
 </html>
