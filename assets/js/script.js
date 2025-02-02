@@ -15,15 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Image and caption data
     const images = [
         {
-            src: "assets/images/SECU.jpeg",
+            src: "https://www.securityweek.com/wp-content/uploads/2024/12/Cybersecurity-Marketing-1024x576.jpg",
             caption: "Top Cybersecurity Trends in 2024 - Tap to Learn More"
         },
         {
-            src: "assets/images/Red Badge Security Logo.png",
+            src: "https://media.licdn.com/dms/image/v2/D4E12AQGOT9LcuWVGsA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1684486842001?e=2147483647&v=beta&t=lH6wkvU7f2zNih6ICXrVFujBaFWSvRyRZBTJPIYpeJs",
             caption: "Breaking Cybersecurity News - Tap to Learn More"
         },
         {
-            src: "assets/images/cybernews.png",
+            src: "https://cdn.prod.website-files.com/640f78d90b310438f1fab4be/643420852af2783deed5805e_ThreatLocker_EndpointSecuityExplained_BlogHeader-03-png.webp",
             caption: "Latest Updates from Security Week - Tap to Learn More"
         }
     ];
