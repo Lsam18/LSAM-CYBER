@@ -142,6 +142,7 @@ h1 {
 
 #home-text {
   padding-top: 53px;
+  color: white;
 }
 
 #home-main-text-1 {
@@ -877,7 +878,7 @@ h2 {
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
-    background-image: url("https://www.shutterstock.com/image-vector/cyber-security-bit-hacker-network-600nw-2123769968.jpg");
+    background-image: url("https://w0.peakpx.com/wallpaper/677/889/HD-wallpaper-black-stylish-background-green-neon-lines-green-light-effects-abstract-black-background-thumbnail.jpg");
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(245, 7, 7, 0.1);
@@ -898,7 +899,7 @@ h2 {
 
 #cybersecurity-quiz,
 #cybersecurity-news {
-    background-color: #500101;
+    background-color: #000000;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -919,7 +920,10 @@ h2 {
 #home-main-text-2,
 #home-text h1:nth-of-type(3),
 #home-text h1:nth-of-type(4) {
-  border: 2px solid red; /* Red border */
+  border: 2px solid rgb(2, 55, 3); /* Red border */
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
   padding: 10px; /* Padding inside the container */
   margin: 0; /* Reset margin for all elements */
 }
@@ -967,13 +971,13 @@ h2 {
 
 #home-text h1 {
     font-family: 'Fira Code', sans-serif;
-    color: #ff0000;
+    color: #15ff00;
     line-height: 1.5;
 }
 
 /* Button Styling */
 .button {
-    background-color: #e20000;
+    background-color: #025107;
     color: white;
     padding: 10px 20px;
     font-size: 1em;
@@ -984,13 +988,20 @@ h2 {
 }
 
 .button:hover {
-    background-color: #900b47;
+    background-color: #124403;
 }
 
 /* Centering the button */
 #download-resume {
     display: inline-block;
+    background-color: #3c3c3c;
     margin-top: 20px;
+    font-weight: 600;
+    color: #0bb925;
+}
+#download-resume:hover{
+  background-color: #10bb00;
+  color: white;
 }
 
 /* News Section Styling */
@@ -1424,7 +1435,7 @@ body.dark-mode {
 
 
 #news-container img {
-  border: 5px solid red;
+  border: 5px solid rgb(0, 255, 34);
   border-radius: 10px;
   width: 100%; /* Adjust as needed */
   height: auto; /* Adjust as needed */
@@ -1434,7 +1445,7 @@ body.dark-mode {
 #image-box {
   margin-top: 20px;
   padding: 10px;
-  border: 2px solid #c60707;
+  border: 2px solid #027e06;
   border-radius: 8px;
   max-width: 100%;
   text-align: center;
@@ -1445,19 +1456,19 @@ body.dark-mode {
   height: auto;
   margin-top: 20px;
   padding: 10px;
-  border: 2px solid #c60707;
+  border: 2px solid #026321;
   border-radius: 8px;
   max-width: 100%;
   text-align: center;
 }
 
 #cybersecurity-news{
-  border: 2px solid #c60707;
+  border: 2px solid #0a5203;
   border-radius: 8px;
 }
 
 #cybersecurity-quiz{
-  border: 2px solid #c60707;
+  border: 2px solid #215f02;
   border-radius: 8px;
   
 }
@@ -1468,7 +1479,7 @@ body.dark-mode {
 }
 
 .iframe2{
-  border: 2px solid #c60707;
+  border: 2px solid #046d2b;
   border-radius: 8px;
 }
 
@@ -1538,7 +1549,7 @@ body.dark-mode {
 }
 
 .table-bordered {
-  border: 2px solid #c60707;
+  border: 2px solid #01420a;
   border-radius: 8px;
 }
 
@@ -1588,8 +1599,9 @@ body.dark-mode {
 }
 
 .table-education-experience-contact {
-  border: 2px solid #c60707;
+  border: 2px solid #027c31;
   border-radius: 8px;
+  background-color: #000000;
 }
 
 .table-education-experience-contact td {
@@ -1597,11 +1609,12 @@ body.dark-mode {
 }
 
 #education-section {
-  background-color: #000b1f;
+  background-color: #000000;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(245, 7, 7, 0.1);
   margin-top: 40px;
+  background: url("https://w0.peakpx.com/wallpaper/677/889/HD-wallpaper-black-stylish-background-green-neon-lines-green-light-effects-abstract-black-background-thumbnail.jpg");
 }
 
 #education-section h2 {
@@ -1612,6 +1625,7 @@ body.dark-mode {
   padding-top: 20px;
   margin-bottom: 30px;
   text-align: center;
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -1622,6 +1636,7 @@ body.dark-mode {
   #education-section {
       padding: 10px;
       margin-top: 60px;
+      
   }
 
   
@@ -1641,6 +1656,7 @@ body.dark-mode {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+  
 }
 
 /* Timeline */
